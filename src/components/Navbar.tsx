@@ -8,15 +8,6 @@ import Blog from './sections/Blog';
 import Home from './sections/Home';
 import Return from './Return';
 
-const sections = {
-  home: <Home />,
-  portfolio: <Projects />,
-  blog: <Blog />,
-  skills: <Skills />,
-  contact: <Contact />,
-  about: <About />,
-};
-
 interface NavbarProps {
   selectedPage: string;
   page: number;
@@ -63,16 +54,6 @@ export default function Navbar({ selectedPage, page, total, onPageChange }: Navb
     }
   }, [selectedPage, displayedPage, page]);
 
-  // Create section components with navigation capability
-  const sectionComponents = {
-    home: <Home onNavigate={(page: string) => handlePageChange(page)} />,
-    portfolio: <Projects />,
-    blog: <Blog />,
-    skills: <Skills />,
-    contact: <Contact />,
-    about: <About />,
-  };
-
   // Handle page change with transition
   const handlePageChange = (page: string) => {
     if (page === 'home' && selectedPage === 'home') return; // Prevent navigating to home when already on home
@@ -82,6 +63,16 @@ export default function Navbar({ selectedPage, page, total, onPageChange }: Navb
     setTimeout(() => {
       onPageChange(page, pageNumbers[page] || 1);
     }, 100);
+  };
+
+  // Create section components with navigation capability
+  const sectionComponents = {
+    home: <Home onNavigate={(page: string) => handlePageChange(page)} />,
+    portfolio: <Projects />,
+    blog: <Blog />,
+    skills: <Skills />,
+    contact: <Contact />,
+    about: <About />,
   };
 
   return (
