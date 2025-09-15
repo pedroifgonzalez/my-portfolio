@@ -64,7 +64,7 @@ body {
   transform: translateY(-50%) translateX(10%);
   width: 45%;
   height: 75%;
-  background-image: url('/public/image.jpg'); /* replace with your image path */
+  background-image: url('/public/image.webp'); /* replace with your image path */
   background-size: cover;
   background-position: center;
   z-index: 1;
