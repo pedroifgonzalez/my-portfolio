@@ -41,14 +41,13 @@ export default function Projects() {
           <div className="project-grid grid md:grid-cols-2 gap-8">
             <div className="project-card p-6 border rounded-lg shadow">
               <a
-                href="https://github.com/pedroifgonzalez/fastapi-project"
+                href="https://github.com/pedroifgonzalez/trackify"
                 target="_blank"
                 className="project-card-link"
               >
-                <h3 className="font-bold text-xl">API Gateway</h3>
+                <h3 className="font-bold text-xl">Trackify</h3>
                 <p className="text-gray-600 mt-2">
-                  A scalable API gateway built with FastAPI and React for monitoring and managing
-                  microservices.
+                  Automate time entry logging by integrating GitHub, WakaTime, and Clockify for seamless tracking.
                 </p>
                 <span className="view-project">View project →</span>
               </a>
