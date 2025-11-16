@@ -54,13 +54,13 @@ export default function Projects() {
             </div>
             <div className="project-card p-6 border rounded-lg shadow">
               <a
-                href="https://github.com/pedroifgonzalez/django-cms"
+                href="https://github.com/pedroifgonzalez/devrules"
                 target="_blank"
                 className="project-card-link"
               >
-                <h3 className="font-bold text-xl">Content Management System</h3>
+                <h3 className="font-bold text-xl">DevRules</h3>
                 <p className="text-gray-600 mt-2">
-                  A modern CMS built with Django and React for content creators and publishers.
+                  A flexible CLI tool for enforcing development guidelines across your projects.
                 </p>
                 <span className="view-project">View project →</span>
               </a>
